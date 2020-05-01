@@ -29,5 +29,5 @@ spec:
             - name: NODE_ENV
               value: "production"
             - name: MONGO_URI
-              value: "mongodb+srv://smartbid:SmartBid1!@cluster0-ofksl.mongodb.net/BiddrProd09032020?retryWrites=true&w=majority"
+              value: "mongodb+srv://smartbid:SmartBid1!@cluster0-ofksl.mongodb.net/test?retryWrites=true&w=majority"
 
