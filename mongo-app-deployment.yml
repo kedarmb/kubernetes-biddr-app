@@ -11,7 +11,7 @@ spec:
   replicas: 3
 
   selector:
-    macthLabels:
+    matchLabels:
       app: smartbid-app
 
   template:
