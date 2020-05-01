@@ -11,7 +11,7 @@ spec:
   replicas: 3
 
   selector:
-    macthLabels:
+    matchLabels:
       app: smartbid-app
 
   template:
@@ -28,7 +28,7 @@ spec:
           env:
             - name: MONGO_INITDB_DATABASE
               value: "BiddrProd09032020"
-            - name: MONGO_INITDB_ROOT_USERNAM
+            - name: MONGO_INITDB_ROOT_USERNAME
               value: "smartbid"
             - name: MONGO_INITDB_ROOT_PASSWORD
               value: "SmartBid1!"
