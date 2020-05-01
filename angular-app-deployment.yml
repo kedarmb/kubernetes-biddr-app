@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+
+kind: Deployment
+
+metadata:
+  name: angular-app-deployment
+  labels:
+    app: smartbid-app
+
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: smartbid-app
+  template:
+    metadata:
+      name: angular-app-pod
+      labels:
+        app: smartbid-app
+    spec:
+      containers:
+        - name: angular-container
+          image: kbelavanaki/biddr-frontend
+          ports:
+            - containerPort: 80
+

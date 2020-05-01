@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+
+kind: Deployment
+
+metadata:
+  name: node-app-deployment
+  labels:
+    app: smartbid-app
+
+spec:
+  replicas: 3
+
+  selector:
+    matchLabels:
+      app: smartbid-app
+
+  template:
+    metadata:
+      name: node-app-pod
+      labels:
+        app: smartbid-app
+    spec:
+      containers:
+        - name: node-container
+          image: kbelavanaki/biddr_backend
+          ports:
+            -containerPort: 3000
+
