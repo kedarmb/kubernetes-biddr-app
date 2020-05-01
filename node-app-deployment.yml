@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: node-container
-          image: kbelavanaki/biddr_backend
+          image: kbelavanaki/smartbid_node:latest
           ports:
             - containerPort: 3000
           env:
